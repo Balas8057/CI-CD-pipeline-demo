@@ -1,21 +1,139 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Jenkins CI/CD Demo</title>
-    <link rel="stylesheet" href="style.css">
+
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jenkins CI/CD Demo</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Jenkins CI/CD Pipeline</h1>
+<header>
+    <div class="logo">⚙️ Jenkins CI/CD</div>
+    <div class="status">● Pipeline Active</div>
+</header>
 
-    <h2>Welcome Students!</h2>
+<main>
 
-    <p>This web application was deployed automatically using Jenkins.</p>
+    <section class="hero">
+        <div class="hero-content">
 
-    <button>CI/CD Demo</button>
-</div>
+            <p class="tag">AUTOMATED DEPLOYMENT</p>
 
-</body>
-</html>
+            <h1>
+                Jenkins <span>CI/CD</span>
+                Pipeline
+            </h1>
+
+            <p class="description">
+                Welcome to our Continuous Integration and Continuous
+                Deployment demonstration. This application is automatically
+                built, tested, and deployed using Jenkins.
+            </p>
+
+            <div class="buttons">
+                <button onclick="showMessage()">
+                    🚀 Run CI/CD Demo
+                </button>
+
+                <button class="secondary">
+                    📊 View Pipeline
+                </button>
+            </div>
+
+            <p id="message"></p>
+
+        </div>
+    </section>
+
+
+    <section class="pipeline">
+
+        <h2>Pipeline Stages</h2>
+
+        <div class="stages">
+
+            <div class="stage completed">
+                <div class="icon">✓</div>
+                <h3>Build</h3>
+                <p>Application built successfully</p>
+                <span>Completed</span>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage completed">
+                <div class="icon">✓</div>
+                <h3>Test</h3>
+                <p>All tests executed successfully</p>
+                <span>Completed</span>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage completed">
+                <div class="icon">✓</div>
+                <h3>Deploy</h3>
+                <p>Application deployed automatically</p>
+                <span>Completed</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="info">
+
+        <div class="card">
+            <h3>🔧 Continuous Integration</h3>
+            <p>
+                Developers push code to GitHub and Jenkins automatically
+                starts the build and testing process.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Continuous Deployment</h3>
+            <p>
+                After successful testing, Jenkins automatically deploys
+                the latest version of the application.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📦 GitHub Integration</h3>
+            <p>
+                Source code is maintained in GitHub and connected to the
+                Jenkins CI/CD pipeline.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>
+        Jenkins CI/CD Demo © 2026 | Built for Students
+    </p>
+</footer>
+
+
+<script>
+
+    function showMessage() {
+
+        const message = document.getElementById("message");
+
+        message.innerHTML =
+            "✅ CI/CD Pipeline executed successfully!";
+
+    }
+
+</script>
+
+</body> </html>
